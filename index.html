@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indigo Dry Leaves Usage Guide</title>
+    <style>
+        :root {
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --container-background: white;
+            --step-background: #fafafa;
+            --border-color: #ddd;
+            --header-color: #5a2d91;
+            --button-bg-color: #5a2d91;
+            --button-hover-bg-color: #471a6d;
+        }
+
+        /* Dark mode */
+        [data-theme="dark"] {
+            --background-color: #121212;
+            --text-color: #f0f0f0;
+            --container-background: #1f1f1f;
+            --step-background: #2a2a2a;
+            --border-color: #444;
+            --header-color: #bb86fc;
+            --button-bg-color: #bb86fc;
+            --button-hover-bg-color: #8a54d1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: var(--container-background);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: background-color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--header-color);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .step {
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: var(--step-background);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .step h2 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            font-size: 1.2em;
+            color: var(--header-color);
+        }
+
+        .step p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .step-image {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .mic-button {
+            background-color: var(--button-bg-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .mic-button:hover {
+            background-color: var(--button-hover-bg-color);
+        }
+
+        .theme-toggle {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .theme-button {
+            padding: 10px 20px;
+            background-color: var(--button-bg-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .theme-button:hover {
+            background-color: var(--button-hover-bg-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Use 3V Indigo Dry Leaves for Hair Coloring</h1>
+
+        <!-- Theme toggle button -->
+        <div class="theme-toggle">
+            <button class="theme-button" id="theme-toggle-btn">Switch to Dark Mode</button>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step">
+                <h2>Step 1: Prepare the Leaves <button class="mic-button" data-audio="resources/audio/step1.mp3">🔊</button></h2>
+                <p>Start by grinding the indigo dry leaves into a fine powder using a mortar and pestle or a grinder.</p>
+                <img src="resources/images/step1.jpg" alt="Grinding Indigo Leaves" class="step-image">
+            </div>
+
+            <div class="step">
+                <h2>Step 2: Mix with Water <button class="mic-button" data-audio="resources/audio/step2.mp3">🔊</button></h2>
+                <p>Mix the powdered indigo with warm water to create a smooth paste. The consistency should be like yogurt.</p>
+                <img src="resources/images/step2.jpg" alt="Mixing Indigo Paste" class="step-image">
+            </div>
+
+            <div class="step">
+                <h2>Step 3: Application <button class="mic-button" data-audio="resources/audio/step3.mp3">🔊</button></h2>
+                <p>Apply the paste evenly onto your hair, starting from the roots to the tips. Use gloves for better application.</p>
+                <img src="resources/images/step3.jpg" alt="Applying Indigo Paste" class="step-image">
+            </div>
+
+            <div class="step">
+                <h2>Step 4: Wait and Rinse <button class="mic-button" data-audio="resources/audio/step4.mp3">🔊</button></h2>
+                <p>Leave the paste on your hair for about 1-2 hours. After that, rinse thoroughly with water.</p>
+                <img src="resources/images/step4.jpg" alt="Rinsing Hair" class="step-image">
+            </div>
+
+            <div class="step">
+                <h2>Step 5: Final Touches <button class="mic-button" data-audio="resources/audio/step5.mp3">🔊</button></h2>
+                <p>Condition your hair after rinsing. Enjoy your beautifully colored black hair!</p>
+                <img src="resources/images/step5.jpg" alt="Conditioning Hair" class="step-image">
+            </div>
+        </div>
+        <div class="disclaimer">
+            <h3>Disclaimer</h3>
+            <p>
+                The information and steps provided on this webpage for using 3V Indigo Dry Leaves for hair coloring have been generated with the assistance of AI (Artificial Intelligence). While we strive to provide accurate and helpful guidance, please note that the content is for informational purposes only and may not fully account for personal circumstances or professional advice.
+            </p>
+            <p>
+                Always perform a patch test before applying any hair products to ensure you do not have an allergic reaction. Consult with a hair care professional for personalized recommendations and proper usage instructions. We are not liable for any adverse reactions, damages, or outcomes that may result from following these steps.
+            </p>
+            <p>
+                For official guidance, please refer to the manufacturer's instructions or contact a certified professional.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Toggle between dark and light mode
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                themeToggleBtn.textContent = 'Switch to Dark Mode';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggleBtn.textContent = 'Switch to Light Mode';
+            }
+        });
+
+        // Play audio on button click
+        const buttons = document.querySelectorAll('.mic-button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const audioSrc = button.getAttribute('data-audio');
+                const audio = new Audio(audioSrc);
+                audio.play();
+            });
+        });
+    </script>
+</body>
+</html>
